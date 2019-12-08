@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.container {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    border: 2px solid darkcyan; 
+}
+.card {
+    border: 2px solid cyan;
+}
+.obverse {
+
+}
+.reverse {
+
+}
+
+img {
+    width: 100%;
+}
