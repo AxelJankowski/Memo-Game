@@ -20,6 +20,8 @@ function flip() {
     secondCard = this;
 
     checkMatch();
+
+    setTimeout(checkWin, 500);
 }
 
 function checkMatch() {
@@ -58,5 +60,14 @@ function resetBoard() {
         card.style.order = randomPos;
     });
 })();
+
+function checkWin() {
+    const testing = Array.from(cards);
+    const checkIfAll = testing.every(card => card.classList.contains('flip'));
+  
+    if (checkIfAll){
+        alert("You win!");
+    }
+}
 
 cards.forEach(card => card.addEventListener('click', flip));
